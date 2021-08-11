@@ -7,6 +7,7 @@ export default {
   title: "Atoms/Button",
   component: Button,
   argTypes: {
+    argTypes: { onClick: { action: "clicked" } },
     backgroundColor: { control: "color" },
   },
 } as ComponentMeta<typeof Button>;
