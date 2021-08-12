@@ -5,10 +5,7 @@ import { Button } from ".";
 export default {
   title: "Atoms/Button",
   component: Button,
-  argTypes: {
-    argTypes: { onClick: { action: "clicked" } },
-    backgroundColor: { control: "color" },
-  },
+  argTypes: { onClick: { action: "clicked" } },
   parameters: {
     docs: {
       description: {
@@ -16,6 +13,13 @@ export default {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <div style={{ margin: "3em" }}>
+        <Story />
+      </div>
+    ),
+  ],
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
@@ -32,6 +36,9 @@ Secondary.args = {
 };
 Secondary.parameters = {
   docs: {
+    source: {
+      code: "Some custom string here",
+    },
     description: {
       story: "詳細な説明をここに記載します",
     },

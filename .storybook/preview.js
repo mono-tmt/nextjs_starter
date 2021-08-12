@@ -1,5 +1,5 @@
 import { addDecorator } from "@storybook/react";
-import { withKnobs } from "@storybook/addon-knobs";
+import { withA11y } from "@storybook/addon-a11y";
 import "../src/styles/globals.css";
 
 export const parameters = {
@@ -12,4 +12,4 @@ export const parameters = {
   },
 };
 
-addDecorator(withKnobs);
+addDecorator(withA11y);
