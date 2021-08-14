@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -12,10 +12,17 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <h1 className="group">
+          Welcome! to <a className="" href="https://nextjs.org">Next.js!</a>
         </h1>
-
+        <div className="group border-indigo-500 hover:bg-white hover:shadow-lg hover:border-transparent ...">
+          <p className="text-indigo-600 group-hover:text-gray-900">
+            New Project
+          </p>
+          <p className="text-indigo-500 group-hover:text-gray-500">
+            Create a new project from a variety of starting templates.
+          </p>
+        </div>
         <p>
           Get started by editing <code>pages/index.js</code>
         </p>
