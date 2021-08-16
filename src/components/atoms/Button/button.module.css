@@ -1,0 +1,20 @@
+.small {
+  @apply py-1.5 px-4 text-xs;
+}
+
+.medium {
+  @apply py-2 px-5 text-sm;
+}
+
+.large {
+  @apply py-3 px-6 text-base;
+}
+
+
+.default {
+  @apply text-gray-600 bg-transparent shadow-inner;
+}
+
+.primary {
+  @apply text-white bg-blue-450;
+}

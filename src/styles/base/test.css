@@ -1,0 +1,8 @@
+/* test */
+h1 {
+    @apply text-4xl text-blue-700 hover:text-blue-450;
+    & > a {
+        @apply sm:text-[calc(20/640*100vw)] md:text-[calc(60/768*100vw)];
+        @apply text-gray-400 group-hover:text-red-500;
+    }
+}
