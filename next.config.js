@@ -18,7 +18,7 @@ module.exports = {
             mode: "local",
             auto: true,
             exportGlobals: true,
-            localIdentName: "[name]__[local]--[hash:base64:3]",
+            localIdentName: "[name]__[local]__[hash:base64:5]",
           },
         }
       },

@@ -15,9 +15,10 @@ export default {
   },
   decorators: [
     (Story) => (
-      <div style={{ margin: "3em" }}>
+      // htmlプレビュー時にwrapperのdivも出力されてしまう
+      // <div style={{ margin: "3em" }}>
         <Story />
-      </div>
+      // </div>
     ),
   ],
 } as ComponentMeta<typeof Button>;
